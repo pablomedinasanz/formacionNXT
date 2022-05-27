@@ -1,7 +1,7 @@
-package com.example.DBA1.Person.domain;
+package com.example.DBA1.entity;
 
 
-import com.example.DBA1.Person.infrastructure.dto.PersonInputDTO;
+import com.example.DBA1.dto.PersonInputDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

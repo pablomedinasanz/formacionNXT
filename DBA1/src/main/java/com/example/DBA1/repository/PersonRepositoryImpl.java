@@ -1,8 +1,6 @@
-package com.example.DBA1.Person.infrastructure.repository;
+package com.example.DBA1.repository;
 
-
-
-import com.example.DBA1.Person.domain.Person;
+import com.example.DBA1.dto.PersonOutputDTO;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -18,12 +16,14 @@ import java.util.HashMap;
 import java.util.List;
 
 public class PersonRepositoryImpl {
-  @PersistenceContext private EntityManager entityManager;
 
-  public List<Person> getData(HashMap<String, Object> conditions) {
+  @PersistenceContext
+  private EntityManager entityManager;
+
+  public List<PersonOutputDTO> getData(HashMap<String, Object> conditions) {
     CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-    CriteriaQuery<Person> query = cb.createQuery(Person.class);
-    Root<Person> root = query.from(Person.class);
+    CriteriaQuery<PersonOutputDTO> query = cb.createQuery(PersonOutputDTO.class);
+    Root<PersonOutputDTO> root = query.from(PersonOutputDTO.class);
 
     List<Predicate> predicates = new ArrayList<>();
     conditions.forEach(

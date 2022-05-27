@@ -1,18 +1,22 @@
-package com.example.DBA1.Person.infrastructure;
+package com.example.DBA1.controller;
 
-
-import com.example.DBA1.Person.application.PersonService;
-import com.example.DBA1.Person.infrastructure.dto.PersonInputDTO;
-import com.example.DBA1.Person.infrastructure.dto.PersonOutputDTO;
+import com.example.DBA1.service.PersonService;
+import com.example.DBA1.dto.PersonInputDTO;
+import com.example.DBA1.dto.PersonOutputDTO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
 @RestController
 public class PersonController {
+
+  public static final String DATE_PATTERN = "yyyy/MM/dd";
   @Autowired
   PersonService personService;
 
@@ -20,7 +24,7 @@ public class PersonController {
   public String addPerson(@RequestBody PersonInputDTO personInputDTO) throws Exception {
     personService.addPerson(personInputDTO);
 
-    return "Persona insertada correctamente";
+    return "Persona insertada correctamente \n" + ResponseEntity.ok(personInputDTO);
   }
 
   @GetMapping("/getall")
@@ -31,8 +35,7 @@ public class PersonController {
   }
 
   @GetMapping("/getPeopleByConditions")
-  public ResponseEntity<?> getPeopleByConditions(@RequestParam HashMap<String, Object> conditions) {
-
-    return ResponseEntity.ok(personService.findPeopleByConditions(conditions));
+  public ResponseEntity<?> findPeopleByConditions(@RequestParam HashMap<String, Object> conditions) {
+    return ResponseEntity.ok().body(personService.findPeopleByConditions(conditions));
   }
 }

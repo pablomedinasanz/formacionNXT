@@ -1,19 +1,20 @@
-package com.example.DBA1.Person.infrastructure.dto;
+package com.example.DBA1.dto;
 
 
-import com.example.DBA1.Person.domain.Person;
+import com.example.DBA1.entity.Person;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class PersonOutputDTO {
+public class PersonOutputDTO implements Serializable {
   private int person_id;
   private String user;
   private String name;

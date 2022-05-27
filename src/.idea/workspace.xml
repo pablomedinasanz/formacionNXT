@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="377c9ffa-efe5-4ffe-bffd-adb733c21acb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/application/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/application/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/application/PersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/application/PersonServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/dto/PersonInputDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/dto/PersonInputDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/dto/PersonOutputDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/dto/PersonOutputDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/repository/PersonRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA1/src/main/java/com/example/DBA1/Person/infrastructure/repository/PersonRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA2/src/main/java/com/example/DBA2/Person/infrastructure/repository/PersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA2/src/main/java/com/example/DBA2/Person/infrastructure/repository/PersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DBA2/src/main/java/com/example/DBA2/Person/infrastructure/repository/PersonRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DBA2/src/main/java/com/example/DBA2/Person/infrastructure/repository/PersonRepositoryImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="29bSAu3j2iApwjThPPHnXdugVLo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="377c9ffa-efe5-4ffe-bffd-adb733c21acb" name="Changes" comment="" />
+      <created>1653380152170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653380152170</updated>
+    </task>
+    <servers />
+  </component>
+</project>

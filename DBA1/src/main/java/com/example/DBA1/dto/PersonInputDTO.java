@@ -1,15 +1,16 @@
-package com.example.DBA1.Person.infrastructure.dto;
+package com.example.DBA1.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PersonInputDTO {
+public class PersonInputDTO implements Serializable {
 
   private int person_id;
   private String user;
