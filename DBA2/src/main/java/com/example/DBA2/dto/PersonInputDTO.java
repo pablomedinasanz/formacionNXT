@@ -1,4 +1,4 @@
-package com.example.DBA2.Person.infrastructure.dto;
+package com.example.DBA2.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

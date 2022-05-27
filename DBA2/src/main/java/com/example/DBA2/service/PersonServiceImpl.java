@@ -1,11 +1,11 @@
-package com.example.DBA2.Person.application;
+package com.example.DBA2.service;
 
-import com.example.DBA2.Person.domain.Person;
+import com.example.DBA2.entity.Person;
 
 
-import com.example.DBA2.Person.infrastructure.dto.PersonInputDTO;
-import com.example.DBA2.Person.infrastructure.dto.PersonOutputDTO;
-import com.example.DBA2.Person.infrastructure.repository.PersonRepository;
+import com.example.DBA2.dto.PersonInputDTO;
+import com.example.DBA2.dto.PersonOutputDTO;
+import com.example.DBA2.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

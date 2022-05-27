@@ -1,7 +1,7 @@
-package com.example.DBA2.Person.infrastructure.repository;
+package com.example.DBA2.repository;
 
 
-import com.example.DBA2.Person.domain.Person;
+import com.example.DBA2.entity.Person;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

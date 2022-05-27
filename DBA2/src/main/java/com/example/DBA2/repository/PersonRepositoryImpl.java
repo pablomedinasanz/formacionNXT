@@ -1,13 +1,12 @@
-package com.example.DBA2.Person.infrastructure.repository;
+package com.example.DBA2.repository;
 
 
-import com.example.DBA2.Person.domain.Person;
+import com.example.DBA2.entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.repository.query.FluentQuery;
 import org.springframework.stereotype.Service;
 
@@ -17,16 +16,14 @@ import java.util.function.Function;
 
 @Service
 public class PersonRepositoryImpl implements PersonRepository {
-  private final MongoTemplate mongoTemplate;
 
   @Autowired
-  public PersonRepositoryImpl(MongoTemplate mongoTemplate) {
-    this.mongoTemplate = mongoTemplate;
-  }
+  PersonRepository personRepository;
 
   @Override
   public Person addPerson(Person person) {
-    mongoTemplate.save(person);
+    personRepository.save(person);
+
     return person;
   }
 
@@ -53,7 +50,7 @@ public class PersonRepositoryImpl implements PersonRepository {
   @Override
   public List<Person> findAll() {
 
-    return mongoTemplate.findAll(Person.class);
+    return personRepository.findAll();
   }
 
   @Override
@@ -148,22 +145,24 @@ public class PersonRepositoryImpl implements PersonRepository {
 
   @Override
   public Person findOneByID(String id) {
-    return mongoTemplate.findById(id, Person.class);
+    return personRepository.findOneByID(id);
   }
 
   @Override
   public void deleteByID(String id) {
-    Person person = mongoTemplate.findById(id, Person.class);
-    if (person != null) mongoTemplate.remove(person);
+
+    Person person = personRepository.findOneByID(id);
+    if (person != null) personRepository.delete(person);
   }
 
   @Override
   public Person updatePerson(Person person, String id) {
-    Person personToUpdate = mongoTemplate.findById(id, Person.class);
-    if (personToUpdate != null) {
+    Optional<Person> personToUpdate = personRepository.findById(id);
+
+    personToUpdate.ifPresent(person1 -> {
       person.setPerson_id(id);
-      mongoTemplate.save(person);
-    }
+      personRepository.save(person);
+    });
 
     return person;
   }

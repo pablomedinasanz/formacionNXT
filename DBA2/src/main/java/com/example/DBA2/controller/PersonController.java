@@ -1,8 +1,8 @@
-package com.example.DBA2.Person.infrastructure;
+package com.example.DBA2.controller;
 
-import com.example.DBA2.Person.application.PersonService;
-import com.example.DBA2.Person.infrastructure.dto.PersonInputDTO;
-import com.example.DBA2.Person.infrastructure.dto.PersonOutputDTO;
+import com.example.DBA2.service.PersonService;
+import com.example.DBA2.dto.PersonInputDTO;
+import com.example.DBA2.dto.PersonOutputDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
